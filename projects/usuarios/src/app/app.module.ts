@@ -7,7 +7,6 @@ import { MenuComponent } from './menu/menu.component';
 import { PaginaprinComponent } from './paginaprin/paginaprin.component';
 import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
 import { FormularioUsuariosComponent } from './formulario-usuarios/formulario-usuarios.component';
-import { DetallesUsuariosComponent } from './detalles-usuarios/detalles-usuarios.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -17,8 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     MenuComponent,
     PaginaprinComponent,
     ListaUsuariosComponent,
-    FormularioUsuariosComponent,
-    DetallesUsuariosComponent
+    FormularioUsuariosComponent
   ],
   imports: [
     BrowserModule,

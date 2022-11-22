@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuariosService } from '../usuarios.service';
+import { Usuario } from '../Usuario';
 
 @Component({
   selector: 'app-lista-usuarios',
@@ -13,6 +14,9 @@ export class ListaUsuariosComponent implements OnInit {
   ngOnInit(): void {
     this.userService.getUsuarios().subscribe((resp) => {
       console.log(resp);
+      resp.data.array.forEach((user: Usuario) => {
+        this.listausuarios.push(user);
+      });
     });
   }
 }
